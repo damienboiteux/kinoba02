@@ -1,16 +1,16 @@
 // Reference Error - when you try to use a variable that is not yet declared
 // try{
-    // function hello(){
-    //     const test = "hello";
-    // }
-    // console.log(test)
+//     function hello(){
+//         const test = "hello";
+//     }
+//     console.log(test)
 // }catch(err){
 //     console.log(err); // ReferenceError: test is not defined
 // }
 
 // RangeError - when you try to use a value that is out of a valid numeric range
 // try{
-    // "hello".repeat(-1); // RangeError: Invalid count value: -1
+//     "hello".repeat(-1); // RangeError: Invalid count value: -1
 // }catch(error){
 //     console.log(error)
 // }
@@ -41,11 +41,28 @@
 //     console.log(error);
 // }
 
+// window.onerror = function(message, url, line, column, error) {
+//     console.log(message);
+//     console.log(url);
+//     console.log(line);
+//     console.log(column);
+//     console.log(error);
+//     return true;
+// }
+
+// window.addEventListener('error', function(event) {
+//     console.log(event.message);
+//     console.log(event.filename);
+//     console.log(event.lineno);
+//     console.log(event.colno);
+//     console.log(event.error);
+// }, true);
+
 // Type Error - when you try to access a 
 // property of an object that does not exist
 // try{
-//     const post = undefined;
-//     console.log(post.title); // Cannot read properties of null (reading 'title')
+    // const post = undefined;
+    // console.log(post.title); // Cannot read properties of null (reading 'title')
 // }catch(error){
 //     console.log(error);
 // }
