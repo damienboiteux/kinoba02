@@ -29,6 +29,7 @@ class CircuitBreaker {
                     this.failureCount = 0;
                 }, this.resetTimeout);
             }
+            return Promise(reject, error);
         }
     } 
 }
